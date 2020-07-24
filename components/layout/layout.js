@@ -6,6 +6,7 @@ import Header from '../header/header'
 import Footer from '../footer/footer'
 import SideBar from '../profile/sidebar/sidebar'
 import UserNetwork from '../profile/usernetwork/usernetwork'
+import Blog from '../profile/blog/blog'
 // styles
 import styles from './layout.module.css'
 import utilStyles from '../../styles/utils.module.css'
@@ -36,6 +37,7 @@ export default function Layout({ children, home }) {
         <SideBar/>
         <main className={styles.mainCol}>
           <UserNetwork/>
+          <Blog/>
   {/*        <section className="blog">
             <p><b>Tom's Latest Blog Entry</b> [<a href="#">Subscribe to this Blog</a>]</p>
             <p>MySpace Concert & Parties -Georgia, Orlando, Miami! (<a href="#">view more</a>) </p>
