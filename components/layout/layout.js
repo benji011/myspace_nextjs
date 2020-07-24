@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import Header from './header'
-import Footer from './footer'
+import Header from '../header/header'
+import Footer from '../footer/footer'
 import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
+import utilStyles from '../../styles/utils.module.css'
 import Link from 'next/link'
 
 const name = 'Benjamin Lo'
