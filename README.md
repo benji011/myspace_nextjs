@@ -6,13 +6,10 @@ An unofficial MySpace clone of the original from 2002 (when social media platfor
 
 The original styles and layout was originally forked from [wittenbrocks tom-myspace-page](https://wittenbrock.github.io/toms-myspace-page). Please send him some love.
 
-## TODO
-- Finish the profile page (WIP by [Benjamin Lo](https://github.com/benji011))
-- Add more profiles, maybe add some dummy pages for other links.
-- Refactor CSS & components
-- Add ESLint
-- Add E2E tests
-- Deploy to Netlify
+## Current progress
+I created a [kanban board](https://github.com/users/benji011/projects/1) in order to manage this project. If you're interested in getting involved, please go ahead and click here to view the todos and get started. Or, you are welcome to create an issue/task and get involved straight away :)
+
+<img src="public/images/kanban.png"/>
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
