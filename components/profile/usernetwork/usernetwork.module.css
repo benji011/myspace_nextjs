@@ -1,0 +1,19 @@
+/*
+========================================
+User Network
+========================================
+*/
+.userNetwork {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 433px;
+  margin: auto;
+  height: 75px;
+  border: 2px solid black;
+  margin-top: 13px;
+}
+
+.userNetworkH2 {
+  font-size: 12pt;
+}

@@ -34,3 +34,24 @@ Master Container
 .backToHome {
   margin: 3rem 0 0;
 }
+
+/*
+========================================
+Page Content Container
+========================================
+*/
+.pageContentContainer {
+  display: grid;
+  grid-template-columns: 325px 453px;
+  grid-column-gap: 20px;
+  grid-template-areas: "sidebar main";
+}
+
+/*
+========================================
+Main Column
+========================================
+*/
+.mainCol {
+  grid-area: main;
+}

@@ -1,0 +1,17 @@
+/*
+========================================
+Blog
+========================================
+*/
+.blog {
+  display: grid;
+  grid-auto-rows: 29px;
+  flex-direction: column;
+  margin-top: 13px;
+  margin-left: 12px;
+  margin-bottom: 16px;
+}
+
+.blogP {
+  margin-top: 3px;
+}
