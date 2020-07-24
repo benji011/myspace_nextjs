@@ -1,0 +1,42 @@
+
+/*
+========================================
+Footer
+========================================
+*/
+.footer {
+  display: grid;
+  grid-template-rows: 16px 39px;
+  background-color: #e5e5e5;
+  padding-top: 10px;
+  height: 65px;
+}
+
+.footerA {
+  text-decoration: underline;
+  font-weight: normal;
+  font-size: 8pt;
+}
+
+.footerUl {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerLi {
+  content: ' | ';
+  font-weight: normal;
+}
+
+.footerSmall {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+  font-size: 8pt;
+  font-weight: normal;
+}
