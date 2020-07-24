@@ -14,14 +14,14 @@ export default function ProfileSideBar() {
             <section className="contact-box">
               <h2>Contacting Tom</h2>
               <figure className="contact-images">
-                <img src="static/img/sendMailIcon.gif" alt="Send Message" />
-                <img src="static/img/forwardMailIcon.gif" alt="Forward to Friend" />
-                <img src="static/img/addFriendIcon.gif" alt="Add to Friends" />
-                <img src="static/img/addFavoritesIcon.gif" alt="Add to Favorites" />
-                <img src="static/img/messagefriend.gif" alt="Instant Message" />
-                <img src="static/img/blockUser.gif" alt="Block User" />
-                <img src="static/img/addToGroupIcon.gif" alt="Add to Group" />
-                <img src="static/img/rankUserIcon.gif" alt="Rank User" />
+                <img src="images/sendMailIcon.gif" alt="Send Message" />
+                <img src="images/forwardMailIcon.gif" alt="Forward to Friend" />
+                <img src="images/addFriendIcon.gif" alt="Add to Friends" />
+                <img src="images/addFavoritesIcon.gif" alt="Add to Favorites" />
+                <img src="images/messagefriend.gif" alt="Instant Message" />
+                <img src="images/blockUser.gif" alt="Block User" />
+                <img src="images/addToGroupIcon.gif" alt="Add to Group" />
+                <img src="images/rankUserIcon.gif" alt="Rank User" />
               </figure>
             </section>
             {/* MySpace URL */}
