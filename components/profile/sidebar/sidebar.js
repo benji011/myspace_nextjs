@@ -3,7 +3,7 @@ import Layout from '../../layout/layout'
 import Date from '../../date'
 import styles from './contact.module.css'
 
-export default function ProfileSideBar() {
+export default function SideBar() {
   return (
           <aside className="profile-sidebar">
             <header>

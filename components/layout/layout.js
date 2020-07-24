@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Header from '../header/header'
 import Footer from '../footer/footer'
-import ProfileSideBar from '../profile/side_bar/profile_sidebar'
+import SideBar from '../profile/sidebar/sidebar'
 import styles from './layout.module.css'
 import utilStyles from '../../styles/utils.module.css'
 import Link from 'next/link'
@@ -28,7 +28,7 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <Header/>
-      <ProfileSideBar/>
+      <SideBar/>
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
