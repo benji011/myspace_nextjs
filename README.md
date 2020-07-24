@@ -7,6 +7,8 @@ This is an open sourced project I decided to do for fun. Myspace (circa 2002) wa
 The original styles and layout was originally forked from [wittenbrocks tom-myspace-page](https://wittenbrock.github.io/toms-myspace-page). Please send him some love.
 
 ## TODO
+- Finish the profile page
+- Add more profiles, maybe add some dummy pages for other links.
 - Add ESLint
 - Add E2E tests
 - Deploy to Netlify
