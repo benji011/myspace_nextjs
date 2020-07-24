@@ -2,7 +2,9 @@
 
 <img src="public/images/myspace_nextjs.png"/>
 
-This app which was bootstrapped from the starter Next.js template. To understand how this app works, please refern to [Learn Next.js](https://nextjs.org/learn) before you start.
+This is an open sourced project I decided to do for fun. Myspace (circa 2002) was bootstrapped with the starter Next.js template. To understand how this app works, please refern to [Learn Next.js](https://nextjs.org/learn) before you start.
+
+The original styles and layout was originally forked from [wittenbrocks tom-myspace-page](https://wittenbrock.github.io/toms-myspace-page). Please send him some love.
 
 ## TODO
 - Add ESLint
