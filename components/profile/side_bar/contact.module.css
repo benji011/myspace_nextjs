@@ -1,0 +1,134 @@
+
+/*
+========================================
+Contact Box
+========================================
+*/
+.contactBox {
+  border: 2px solid rgb(102, 153, 204);
+  height: 149px;
+  width: 300px;
+  margin-bottom: 24px;
+}
+
+.contactBoxH2 {
+  color: white;
+  background-color: rgb(102, 153, 204);
+  height: 17px;
+  padding-left: 10px;
+}
+
+.contactImages {
+  display: grid;
+  grid-template-columns: 150px 150px;
+  margin: 0;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+
+/*
+========================================
+MySpace URL
+========================================
+*/
+.myspaceUrlBox {
+  border: 1px solid rgb(102, 153, 204);
+  height: 30px;
+  margin-bottom: 24px;
+}
+
+.myspaceUrlBoxH3,
+.myspaceUrlBoxP {
+  margin: 0;
+  padding: 0;
+}
+
+.myspaceUrlBoxH3 {
+  font-size: 8pt;
+  padding-left: 2px;
+}
+
+.myspaceUrlBoxP {
+  padding-left: 6px;
+}
+
+
+/*
+========================================
+Sidebar Table Class
+========================================
+*/
+.sidebarTable {
+  border: 2px solid rgb(102, 153, 204);
+  display: table;
+  border-collapse: separate;
+  border-spacing: 3px;
+}
+
+.sidebarTableH2 {
+  background-color: rgb(102, 153, 204);
+  color: white;
+  text-align: left;
+  height: 17px;
+  padding-left: 15px;
+  padding-top: 2px;
+}
+
+.sidebarTableHeader {
+  vertical-align: top;
+  text-align: left;
+  width: 107px;
+  background-color: rgb(177, 208, 240);
+  color: #336699;
+  padding: 3px;
+  font-weight: bold;
+  font-size: 8pt;
+}
+
+.sidebarTableData {
+  width: 184px;
+  background-color: rgb(213, 232, 251);
+  padding: 3px;
+}
+
+/*
+========================================
+Interests
+========================================
+*/
+.interestsP {
+  margin-top: 0;
+}
+
+.interestsP:only-child,
+.interestsP:last-child {
+  margin-bottom: 0;
+}
+
+.interestsTable {
+  margin-bottom: 13px;
+}
+
+/*
+========================================
+Schools
+========================================
+*/
+.schools .sidebarTableHeader {
+  width: 228px;
+  color: black;
+  font-weight: normal;
+}
+
+.schools .sidebarTableData {
+  width: 63px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.schoolsUl {
+  margin-bottom: 2em;
+  list-style: none;
+  padding-left: 0;
+}

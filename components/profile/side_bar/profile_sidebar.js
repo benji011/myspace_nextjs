@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Layout from '../../layout/layout'
 import Date from '../../date'
+import styles from './contact.module.css'
 
 export default function ProfileSideBar() {
   return (
@@ -11,9 +12,9 @@ export default function ProfileSideBar() {
             {/* Profile Picture */}
             {/*<Profile />*/}
             {/* Contact Box */}
-            <section className="contact-box">
-              <h2>Contacting Tom</h2>
-              <figure className="contact-images">
+            <section className={styles.contactBox}>
+              <h2 className={styles.contactBoxH2}>Contacting Tom</h2>
+              <figure className={styles.contactImages}>
                 <img src="images/sendMailIcon.gif" alt="Send Message" />
                 <img src="images/forwardMailIcon.gif" alt="Forward to Friend" />
                 <img src="images/addFriendIcon.gif" alt="Add to Friends" />
@@ -25,26 +26,30 @@ export default function ProfileSideBar() {
               </figure>
             </section>
             {/* MySpace URL */}
-            <section className="myspace-url-box">
-              <h3><b>MySpace URL:</b></h3>
-              <p>http://www.myspace.com/tom</p>
+            <section className={styles.myspaceUrlBox}>
+              <h3 className={styles.myspaceUrlBoxH3}>
+                <b>MySpace URL:</b>
+              </h3>
+              <p className={styles.myspaceUrlBoxP}>
+                http://www.myspace.com/tom
+              </p>
             </section>
             {/* Interests Section */}
-            <section className="interests">
-              <table className="sidebar-table">
+            <section className={styles.interestsP}>
+              <table className={styles.sidebarTable}>
                 <caption>
-                <h2 className="sidebar-table-h2">Tom's Interests</h2>
+                <h2 className={styles.sidebarTableH2}>Tom's Interests</h2>
                 </caption>
                 <tbody>
                   <tr>
-                    <th className="sidebar-table-header" scope="row">General</th>
-                    <td className="sidebar-table-data">
+                    <th className={styles.sidebarTableHeader} scope="row">General</th>
+                    <td className={styles.sidebarTableData}>
                       <p>Internet, Movies, Reading, Dancing, Karaoke, Baseball, Language, Culture, History of Communism, Philosophy, Singing/Writing Music, Running, Finding New Food, Weight Lifting, Hiking, WWI Aviation, Travel, Building alternate communities</p>
                     </td>
                   </tr>
                   <tr>
-                    <th className="sidebar-table-header" scope="row">Music</th>
-                    <td className="sidebar-table-data">
+                    <th className={styles.sidebarTableHeader} scope="row">Music</th>
+                    <td className={styles.sidebarTableData}>
                       <p><b>Bands</b>: Beatles, Superdrag, Jackson 5, Weezer, Sex Pistols, The Carpenters, Vain, Radiohead, Teenage Fanclub, Rocket from the Crypt, Pitchfork, Oasis, Rialto, Supergrass, Travis, The Doors, Cheap Trick, Simple Plan, AliceCooper, KISS, A*TEENS, The Beach Boys, The Velvet Underground, Journey</p>
                       <p><b>Solo Artists</b>: Billy Joel, Bruce Springsteen, Elvis, Brendan Benson, David Bowie, Rick Springfield, Barry Manilow, Paul Stanley Solo Album, Bob Dylan, Rod Stewart</p>
                       <p><b>Singers</b>: Michael Jackson (age 14 & under), Karen Carpenter, Whitney Houston (particularly The Bodyguard soundtrack), George Michael, Louie Louie, Coco Lee, Robin Zander, Frank Sinatra, Steve Perry, Gerard Way</p>
@@ -53,15 +58,15 @@ export default function ProfileSideBar() {
                     </td>
                   </tr>
                   <tr>
-                    <th className="sidebar-table-header" scope="row">Movies</th>
-                    <td className="sidebar-table-data">
+                    <th className={styles.sidebarTableHeader} scope="row">Movies</th>
+                    <td className={styles.sidebarTableData}>
                       <p><b>Films</b>: Lawrence of Arabia, Ben Hur, Patton, Spartacus, Gandhi, The 10 Commandments, Apocalypse Now, Beauty & The Beast (the cartoon), Thin Red Line, Titanic, Gladiator, The Patriot, Breakfast at Tiffanys, Un Coeur en Hiver, To Live, Happy Times, The Road Home, Not One Less, Ju Dou, Red Sorghum, The Empire of the Sun, Gone With the Wind, The Godfather, 2001, Clockwork Orange, Blade Runner, Deer Hunter, Mean Streets, Grease, Urban Cowboy, Saturday Night Fever, The Sound of Music, Copland, Xiu Xiu, Dances With Wolves</p>
                       <p><b>Directors</b>: Kubrick, Francis Copolla, Zhang Yimou, Anh Hung Tran, Steven Spielberg</p>
                     </td>
                   </tr>
                   <tr>
-                    <th className="sidebar-table-header" scope="row">Television</th>
-                    <td className="sidebar-table-data">
+                    <th className={styles.sidebarTableHeader} scope="row">Television</th>
+                    <td className={styles.sidebarTableData}>
                       <p>Tuned out. <em>Except for SF Giants.</em> I rented Band of Brothers and liked that.</p>
                     </td>
                   </tr>
@@ -76,46 +81,46 @@ export default function ProfileSideBar() {
                 </caption>
                 <tbody>
                   <tr>
-                    <th className="sidebar-table-header" scope="row">Status:</th>
-                    <td className="sidebar-table-data">Single</td>
+                    <th className={styles.sidebarTableHeader} scope="row">Status:</th>
+                    <td className={styles.sidebarTableData}>Single</td>
                   </tr>
                   <tr>
-                    <th className="sidebar-table-header" scope="row">Here For:</th>
-                    <td className="sidebar-table-data">Networking, Dating, Serious Relationships, Friends</td>
+                    <th className={styles.sidebarTableHeader} scope="row">Here For:</th>
+                    <td className={styles.sidebarTableData}>Networking, Dating, Serious Relationships, Friends</td>
                   </tr>
                   <tr>
-                    <th className="sidebar-table-header" scope="row">Hometown:</th>
-                    <td className="sidebar-table-data">San Diego</td>
+                    <th className={styles.sidebarTableHeader} scope="row">Hometown:</th>
+                    <td className={styles.sidebarTableData}>San Diego</td>
                   </tr>
                   <tr>
-                    <th className="sidebar-table-header" scope="row">Ethnicity:</th>
-                    <td className="sidebar-table-data">White / Caucasian</td>
+                    <th className={styles.sidebarTableHeader} scope="row">Ethnicity:</th>
+                    <td className={styles.sidebarTableData}>White / Caucasian</td>
                   </tr>
                   <tr>
-                    <th className="sidebar-table-header" scope="row">Zodiac Sign:</th>
-                    <td className="sidebar-table-data">Libra</td>
+                    <th className={styles.sidebarTableHeader} scope="row">Zodiac Sign:</th>
+                    <td className={styles.sidebarTableData}>Libra</td>
                   </tr>
                   <tr>
-                    <th className="sidebar-table-header" scope="row">Smoke / Drink:</th>
-                    <td className="sidebar-table-data">No / No</td>
+                    <th className={styles.sidebarTableHeader} scope="row">Smoke / Drink:</th>
+                    <td className={styles.sidebarTableData}>No / No</td>
                   </tr>
                   <tr>
-                    <th className="sidebar-table-header" scope="row">Occupation:</th>
-                    <td className="sidebar-table-data">MySpace</td>
+                    <th className={styles.sidebarTableHeader} scope="row">Occupation:</th>
+                    <td className={styles.sidebarTableData}>MySpace</td>
                   </tr>
                 </tbody>
               </table>
             </section>
             {/* Tom's Schools Section */}
-            <section className="schools">
-              <table className="sidebar-table">
+            <section className={styles.schools}>
+              <table className={styles.sidebarTable}>
                 <caption>
-                <h2 className="sidebar-table-h2">Tom's Schools</h2>
+                <h2 className={styles.sidebarTableH2}>Tom's Schools</h2>
                 </caption>
                 <tbody>
                   <tr>
-                    <th className="sidebar-table-header" scope="row">
-                      <ul>
+                    <th className={styles.sidebarTableHeader} scope="row">
+                      <ul className={styles.schoolsUl}>
                         <li><a href="#">University Of California-Los Angeles</a></li>
                         <li>Los Angeles, CALIFORNIA</li>
                         <li>Graduated: <a href="#">2000</a></li>
@@ -123,11 +128,11 @@ export default function ProfileSideBar() {
                         <li>Major: Film - Critical Studies</li>
                       </ul>
                     </th>
-                    <td className="sidebar-table-data">1999 to 2000</td>
+                    <td className={styles.sidebarTableData}>1999 to 2000</td>
                   </tr>
                   <tr>
-                    <th className="sidebar-table-header" scope="row">
-                      <ul>
+                    <th className={styles.sidebarTableHeader} scope="row">
+                      <ul className={styles.schoolsUl}>
                         <li><a href="#">University Of California-Berkeley</a></li>
                         <li>Berkeley, CALIFORNIA</li>
                         <li>Graduated: <a href="#">1997</a></li>
@@ -137,7 +142,7 @@ export default function ProfileSideBar() {
                         <li>Clubs: DECAL: Literary Theory</li>
                       </ul>
                     </th>
-                    <td className="sidebar-table-data">1993 to 1996</td>
+                    <td className={styles.sidebarTableData}>1993 to 1996</td>
                   </tr>
                 </tbody>
               </table>
