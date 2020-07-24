@@ -1,0 +1,37 @@
+
+/*
+========================================
+Blurbs
+========================================
+*/
+.mainSectionHeader {
+  background-color: #ffcc99;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 8px;
+}
+
+.mainSectionH2 {
+  color: #FF6600;
+  margin-left: 20px;
+}
+
+.blurbsH3 {
+  margin: 0;
+  color: #FF6600;
+  font-size: 9pt;
+  margin-left: 15px;
+}
+
+.blurbsP:nth-of-type(5) {
+  margin-bottom: 2em;
+}
+
+.blurbsP {
+  margin: 0 10px 15px 15px;
+}
+
+.info {
+  color: green;
+  font-weight: bold;
+}

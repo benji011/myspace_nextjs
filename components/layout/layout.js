@@ -6,6 +6,7 @@ import Header from '../header/header'
 import Footer from '../footer/footer'
 import SideBar from '../profile/sidebar/sidebar'
 import UserNetwork from '../profile/usernetwork/usernetwork'
+import Blurbs from '../profile/blurbs/blurbs'
 import Blog from '../profile/blog/blog'
 // styles
 import styles from './layout.module.css'
@@ -35,9 +36,11 @@ export default function Layout({ children, home }) {
       <Header/>
       <div className={styles.pageContentContainer}>
         <SideBar/>
+        {/* main section */}
         <main className={styles.mainCol}>
           <UserNetwork/>
           <Blog/>
+          <Blurbs/>
         </main>
       </div>
       <main>{children}</main>
