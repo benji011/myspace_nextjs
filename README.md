@@ -1,4 +1,4 @@
-### Myspace Next.js
+# Myspace (circa 2002)
 
 <img src="public/images/myspace_nextjs.png"/>
 
