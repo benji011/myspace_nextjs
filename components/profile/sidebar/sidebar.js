@@ -1,16 +1,17 @@
 import Head from 'next/head'
 import Layout from '../../layout/layout'
+import Avatar from './avatar'
 import Date from '../../date'
-import styles from './contact.module.css'
+import styles from './sidebar.module.css'
 
 export default function SideBar() {
   return (
-          <aside className="profile-sidebar">
+          <aside className={styles.profileSidebar}>
             <header>
-              <h1>Tom</h1>
+              <h1 className={styles.profileSidebarH1}>Tom</h1>
             </header>
             {/* Profile Picture */}
-            {/*<Profile />*/}
+            <Avatar/>
             {/* Contact Box */}
             <section className={styles.contactBox}>
               <h2 className={styles.contactBoxH2}>Contacting Tom</h2>

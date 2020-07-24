@@ -1,10 +1,13 @@
+// Next.js libraries
 import Head from 'next/head'
+import Link from 'next/link'
+// Profile components
 import Header from '../header/header'
 import Footer from '../footer/footer'
 import SideBar from '../profile/sidebar/sidebar'
+// styles
 import styles from './layout.module.css'
 import utilStyles from '../../styles/utils.module.css'
-import Link from 'next/link'
 
 const name = 'Benjamin Lo'
 export const siteTitle = 'MySpace Next.js'

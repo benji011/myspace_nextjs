@@ -1,6 +1,30 @@
 
 /*
 ========================================
+Profile Sidebar Column
+========================================
+*/
+.profileSidebar {
+  grid-area: sidebar;
+  margin-left: 27px;
+  width: 300px;
+}
+
+.profileSidebarH1 {
+  font-size: 12.25pt;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+.profileSidebarUl {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*
+========================================
 Contact Box
 ========================================
 */

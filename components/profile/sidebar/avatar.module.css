@@ -1,0 +1,55 @@
+
+/*
+========================================
+Profile Picture Container
+========================================
+*/
+.profilePictureContainer {
+  display: grid;
+  grid-template-columns: 170px 115px;
+  grid-template-rows: 176px;
+  grid-column-gap: 15px;
+  margin-bottom: 12px;
+}
+
+/*.profilePictureContainerP {
+  margin: 0;
+}*/
+
+.profilePic {
+  grid-area: 1/1;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.personalMsg {
+  grid-area: 1/2;
+  margin: 0;
+}
+
+.genderAge {
+  grid-area: 1/2;
+  list-style: none;
+  padding: 0;
+}
+
+.genderAgeLi:first-child {
+  margin-top: 28px;
+}
+
+.lastLogin {
+  grid-area: 1/2;
+  align-self: end;
+  list-style: none;
+  padding: 0;
+}
+
+.lastLoginLi:last-child {
+  margin-bottom: 15px;
+}
+
+.picsVideos {
+  grid-area: 1/1;
+  justify-self: center;
+  align-self: end;
+}
