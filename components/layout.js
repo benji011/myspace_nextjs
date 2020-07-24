@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Header from './header'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
@@ -8,7 +9,7 @@ export const siteTitle = 'MySpace Next.js'
 
 export default function Layout({ children, home }) {
   return (
-    <div className={styles.container}>
+    <div className={styles.masterContainer}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -24,7 +25,8 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
+      <Header/>
+      {/*<header className={styles.header}>
         {home ? (
           <>
             <img
@@ -52,7 +54,7 @@ export default function Layout({ children, home }) {
             </h2>
           </>
         )}
-      </header>
+      </header>*/}
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
