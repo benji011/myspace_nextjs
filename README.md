@@ -6,6 +6,25 @@ An unofficial MySpace clone of the original from 2002 (when social media platfor
 
 The original styles and layout was originally forked from [wittenbrocks tom-myspace-page](https://wittenbrock.github.io/toms-myspace-page). Please send him some love.
 
+
+## Installation
+
+Clone the repository to your own working directory then `cd` into it to install dependencies with `npm`
+
+```bash
+git clone git@github.com:benji011/myspace_nextjs.git
+cd myspace_nextjs
+npm install
+
+```
+
+## Running locally
+Just run the below command and open `localhost:3000` in your browser
+
+```bash
+npm run dev
+```
+
 <img src="public/images/myspace_tom_screenshot.png"/>
 
 ## Current progress
