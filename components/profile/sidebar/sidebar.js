@@ -62,14 +62,14 @@ export default function SideBar({ props }) {
                   <tr>
                     <th className={styles.sidebarTableHeader} scope="row">Movies</th>
                     <td className={styles.sidebarTableData}>
-                      <p><b>Films</b>: Lawrence of Arabia, Ben Hur, Patton, Spartacus, Gandhi, The 10 Commandments, Apocalypse Now, Beauty & The Beast (the cartoon), Thin Red Line, Titanic, Gladiator, The Patriot, Breakfast at Tiffanys, Un Coeur en Hiver, To Live, Happy Times, The Road Home, Not One Less, Ju Dou, Red Sorghum, The Empire of the Sun, Gone With the Wind, The Godfather, 2001, Clockwork Orange, Blade Runner, Deer Hunter, Mean Streets, Grease, Urban Cowboy, Saturday Night Fever, The Sound of Music, Copland, Xiu Xiu, Dances With Wolves</p>
-                      <p><b>Directors</b>: Kubrick, Francis Copolla, Zhang Yimou, Anh Hung Tran, Steven Spielberg</p>
+                      <p><b>Films</b>: {props[0].films}</p>
+                      <p><b>Directors</b>: {props[0].directors}</p>
                     </td>
                   </tr>
                   <tr>
                     <th className={styles.sidebarTableHeader} scope="row">Television</th>
                     <td className={styles.sidebarTableData}>
-                      <p>Tuned out. <em>Except for SF Giants.</em> I rented Band of Brothers and liked that.</p>
+                      <div dangerouslySetInnerHTML={{ __html: props[0].contentHtml }}/>
                     </td>
                   </tr>
                 </tbody>
