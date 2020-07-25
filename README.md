@@ -9,7 +9,7 @@ The original styles and layout was originally forked from [wittenbrocks tom-mysp
 
 ## Installation
 
-Clone the repository to your own working directory then `cd` into it to install dependencies with `npm`
+Fork the repository then clone it to your own machine in a directory you will remember. Then `cd` into it to install dependencies with `npm`
 
 ```bash
 git clone git@github.com:benji011/myspace_nextjs.git
