@@ -46,12 +46,3 @@ Page Content Container
   grid-column-gap: 20px;
   grid-template-areas: "sidebar main";
 }
-
-/*
-========================================
-Main Column
-========================================
-*/
-.mainCol {
-  grid-area: main;
-}

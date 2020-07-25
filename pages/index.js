@@ -1,23 +1,30 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Layout, { siteTitle } from '../components/layout/layout'
+// Profile components
+import SideBar from '../components/profile/sidebar/sidebar'
+import UserNetwork from '../components/profile/usernetwork/usernetwork'
+import Blog from '../components/profile/blog/blog'
+import Blurbs from '../components/profile/blurbs/blurbs'
+import FriendsSpace from '../components/profile/friends/friends'
+import CommentWall from '../components/profile/comments/comments'
 import utilStyles from '../styles/utils.module.css'
-import { getSortedPostsData } from '../lib/posts'
-import Date from '../components/date'
+import { getSortedInterestsData } from '../lib/interests'
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
+  const allInterestsData = getSortedInterestsData()
   return {
     props: {
-      allPostsData
+      allInterestsData
     }
   }
 }
 
-export default function Home ({ allPostsData }) {
+export default function Home ({ allInterestsData }) {
   return (
     <Layout home>
-      <Head>
+      {/* TODO: remove this later. Just keeping it for reference.*/}
+      {/*<Head>
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
@@ -34,7 +41,7 @@ export default function Home ({ allPostsData }) {
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
+          {allInterestsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
               <Link href="/posts/[id]" as={`/posts/${id}`}>
                 <a>{title}</a>
@@ -46,7 +53,15 @@ export default function Home ({ allPostsData }) {
             </li>
           ))}
         </ul>
-      </section>
+      </section>*/}
+      <SideBar/>
+      <main className={utilStyles.mainCol}>
+        <UserNetwork/>
+        <Blog/>
+        <Blurbs/>
+        <FriendsSpace/>
+        <CommentWall/>
+      </main>
     </Layout>
   )
 }

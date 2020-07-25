@@ -1,15 +1,9 @@
 // Next.js libraries
 import Head from 'next/head'
 import Link from 'next/link'
-// Profile components
+// Header & footer components
 import Header from '../header/header'
 import Footer from '../footer/footer'
-import SideBar from '../profile/sidebar/sidebar'
-import UserNetwork from '../profile/usernetwork/usernetwork'
-import Blog from '../profile/blog/blog'
-import Blurbs from '../profile/blurbs/blurbs'
-import FriendsSpace from '../profile/friends/friends'
-import CommentWall from '../profile/comments/comments'
 // styles
 import styles from './layout.module.css'
 import utilStyles from '../../styles/utils.module.css'
@@ -37,15 +31,9 @@ export default function Layout({ children, home }) {
       </Head>
       <Header/>
       <div className={styles.pageContentContainer}>
-        <SideBar/>
-        <main className={styles.mainCol}>
-          <UserNetwork/>
-          <Blog/>
-          <Blurbs/>
-          <FriendsSpace/>
-          <CommentWall/>
-        </main>
+        {children}
       </div>
+    {/* TODO: comment this out later to provide links */}
 {/*      <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
