@@ -6,8 +6,9 @@ import Header from '../header/header'
 import Footer from '../footer/footer'
 import SideBar from '../profile/sidebar/sidebar'
 import UserNetwork from '../profile/usernetwork/usernetwork'
-import Blurbs from '../profile/blurbs/blurbs'
 import Blog from '../profile/blog/blog'
+import Blurbs from '../profile/blurbs/blurbs'
+import FriendsSpace from '../profile/friendsspace/friendsspace'
 // styles
 import styles from './layout.module.css'
 import utilStyles from '../../styles/utils.module.css'
@@ -41,6 +42,7 @@ export default function Layout({ children, home }) {
           <UserNetwork/>
           <Blog/>
           <Blurbs/>
+          <FriendsSpace/>
         </main>
       </div>
       <main>{children}</main>

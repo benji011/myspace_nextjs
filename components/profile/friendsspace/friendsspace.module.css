@@ -1,0 +1,70 @@
+
+/*
+========================================
+Friend Space
+========================================
+*/
+.mainSectionHeader {
+  background-color: #ffcc99;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 8px;
+}
+
+.mainSectionH2 {
+  color: #FF6600;
+  margin-left: 20px;
+}
+
+.friendsHeader {
+  margin-bottom: 6px;
+}
+
+.friendsP:nth-of-type(1) {
+  margin-top: 0;
+  margin-left: 15px;
+}
+
+
+.focusHighlight {
+  color: #cc0000;
+  font-weight: normal;
+  font-size: 10pt;
+}
+
+.friendPicContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 109px);
+  grid-template-rows: 160px 193px;
+}
+
+.friendPicContainerFigure {
+  margin: 0;
+}
+
+.friendPicContainerFigcaption {
+  text-align: center;
+}
+
+.friendPicContainerImg {
+  display: block;
+  margin: auto;
+}
+
+.friendsListLink {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 7px;
+  margin-right: 8px;
+  margin-bottom: 30px;
+}
+
+/*.friendsListLink {
+}*/
+
+.friendsListLinkA {
+  color: #cc0000;
+}
+.friendsCommentImg {
+  width: 140px;
+}
