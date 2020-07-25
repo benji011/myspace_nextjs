@@ -1,0 +1,79 @@
+
+/*
+========================================
+Comment Wall
+========================================
+*/
+.commentWall .mainSectionHeader {
+  margin-bottom: 3px;
+}
+
+.commentWall .mainSectionH2 {
+  margin-bottom: 0;
+}
+
+#commentCounter {
+  margin-top: 0;
+  margin-left: 15px;
+  margin-bottom: 3px;
+}
+
+.commentWallTable {
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+.commentWallTh {
+  background-color: rgb(255, 153, 51);
+  width: 158px;
+  padding: 3px;
+  vertical-align: top;
+}
+
+.commentWallTd {
+  vertical-align: top;
+  background-color: rgb(249, 214, 180);
+  width: 269px;
+  padding: 3px;
+}
+
+.commentWallFigcaption,
+.commentWallFigure {
+  margin: 0;
+}
+
+.commentWallFigcaption {
+  margin-bottom: 1em;
+}
+
+.commentWallFigure {
+  margin-bottom: 49.33px;
+}
+
+.commentWallH3 {
+  font-size: 10pt;
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+.commentWallP {
+  font-weight: normal;
+  text-align: left;
+  margin: 0;
+}
+
+#addComment {
+  text-align: right;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.focusHighlight {
+  color: #cc0000;
+  font-weight: normal;
+  font-size: 10pt;
+}
+
+.friendsCommentImg {
+  width: 140px;
+}

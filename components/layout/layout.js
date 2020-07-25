@@ -8,7 +8,8 @@ import SideBar from '../profile/sidebar/sidebar'
 import UserNetwork from '../profile/usernetwork/usernetwork'
 import Blog from '../profile/blog/blog'
 import Blurbs from '../profile/blurbs/blurbs'
-import FriendsSpace from '../profile/friendsspace/friendsspace'
+import FriendsSpace from '../profile/friends/friends'
+import CommentWall from '../profile/comments/comments'
 // styles
 import styles from './layout.module.css'
 import utilStyles from '../../styles/utils.module.css'
@@ -23,7 +24,7 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="The unofficial MySpace project"
         />
         <meta
           property="og:image"
@@ -37,22 +38,22 @@ export default function Layout({ children, home }) {
       <Header/>
       <div className={styles.pageContentContainer}>
         <SideBar/>
-        {/* main section */}
         <main className={styles.mainCol}>
           <UserNetwork/>
           <Blog/>
           <Blurbs/>
           <FriendsSpace/>
+          <CommentWall/>
         </main>
       </div>
-      <main>{children}</main>
+{/*      <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">
             <a>← Back to home</a>
           </Link>
         </div>
-      )}
+      )}*/}
       <Footer/>
     </div>
   )

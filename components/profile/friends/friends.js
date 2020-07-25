@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Layout from '../../layout/layout'
-import styles from './friendsspace.module.css'
+import styles from './friends.module.css'
 
 export default function FriendsSpace() {
   return (
