@@ -4,7 +4,7 @@ import Avatar from './avatar'
 import Date from '../../date'
 import styles from './sidebar.module.css'
 
-export default function SideBar() {
+export default function SideBar({ props }) {
   return (
           <aside className={styles.profileSidebar}>
             <header>
@@ -45,17 +45,18 @@ export default function SideBar() {
                   <tr>
                     <th className={styles.sidebarTableHeader} scope="row">General</th>
                     <td className={styles.sidebarTableData}>
-                      <p>Internet, Movies, Reading, Dancing, Karaoke, Baseball, Language, Culture, History of Communism, Philosophy, Singing/Writing Music, Running, Finding New Food, Weight Lifting, Hiking, WWI Aviation, Travel, Building alternate communities</p>
+                      <p>{props[0].interests}</p>
+                      {/*<p>Internet, Movies, Reading, Dancing, Karaoke, Baseball, Language, Culture, History of Communism, Philosophy, Singing/Writing Music, Running, Finding New Food, Weight Lifting, Hiking, WWI Aviation, Travel, Building alternate communities</p>*/}
                     </td>
                   </tr>
                   <tr>
                     <th className={styles.sidebarTableHeader} scope="row">Music</th>
                     <td className={styles.sidebarTableData}>
-                      <p><b>Bands</b>: Beatles, Superdrag, Jackson 5, Weezer, Sex Pistols, The Carpenters, Vain, Radiohead, Teenage Fanclub, Rocket from the Crypt, Pitchfork, Oasis, Rialto, Supergrass, Travis, The Doors, Cheap Trick, Simple Plan, AliceCooper, KISS, A*TEENS, The Beach Boys, The Velvet Underground, Journey</p>
-                      <p><b>Solo Artists</b>: Billy Joel, Bruce Springsteen, Elvis, Brendan Benson, David Bowie, Rick Springfield, Barry Manilow, Paul Stanley Solo Album, Bob Dylan, Rod Stewart</p>
-                      <p><b>Singers</b>: Michael Jackson (age 14 & under), Karen Carpenter, Whitney Houston (particularly The Bodyguard soundtrack), George Michael, Louie Louie, Coco Lee, Robin Zander, Frank Sinatra, Steve Perry, Gerard Way</p>
-                      <p><b>Albums</b>: Appetite for Destruction - Guns & Roses; Life - The Cardigans; A Hard Day's Night - The Beatles; Dookie - Green Day; Blue - Weezer; One Missisipi - Brendan Benson; Two Steps from the Move - Hanoi Rocks; Led Zeppelin I, The Doors, In The Valley of Dying Stars - SuperDrag; Survivor When Seconds Count - Rick Springfield, Working Class Dog</p>
-                      <p><b>Instruments</b>: The Er Hu, Piano, certain guitar tones (Rocket from the Crypt, Sex Pistols, Rolling Stones)</p>
+                      <p><b>Bands</b>: {props[0].bands}</p>
+                      <p><b>Solo Artists</b>: {props[0].solo_artists}</p>
+                      <p><b>Singers</b>: {props[0].singers}</p>
+                      <p><b>Albums</b>: {props[0].albums}</p>
+                      <p><b>Instruments</b>: {props[0].instruments}</p>
                     </td>
                   </tr>
                   <tr>

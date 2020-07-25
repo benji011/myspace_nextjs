@@ -9,18 +9,19 @@ import Blurbs from '../components/profile/blurbs/blurbs'
 import FriendsSpace from '../components/profile/friends/friends'
 import CommentWall from '../components/profile/comments/comments'
 import utilStyles from '../styles/utils.module.css'
-import { getSortedInterestsData } from '../lib/interests'
+import { getSortedProfilesData } from '../lib/profiles'
 
 export async function getStaticProps() {
-  const allInterestsData = getSortedInterestsData()
+  const allProfilesData = getSortedProfilesData()
   return {
     props: {
-      allInterestsData
+      allProfilesData
     }
   }
 }
 
-export default function Home ({ allInterestsData }) {
+export default function Home ({ allProfilesData }) {
+// export default function Home () {
   return (
     <Layout home>
       {/* TODO: remove this later. Just keeping it for reference.*/}
@@ -41,7 +42,7 @@ export default function Home ({ allInterestsData }) {
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
-          {allInterestsData.map(({ id, date, title }) => (
+          {allProfilesData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
               <Link href="/posts/[id]" as={`/posts/${id}`}>
                 <a>{title}</a>
@@ -54,7 +55,10 @@ export default function Home ({ allInterestsData }) {
           ))}
         </ul>
       </section>*/}
-      <SideBar/>
+      <Head>
+        <title>{siteTitle}</title>
+      </Head>
+      <SideBar props={allProfilesData}/>
       <main className={utilStyles.mainCol}>
         <UserNetwork/>
         <Blog/>
